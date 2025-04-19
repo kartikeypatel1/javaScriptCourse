@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boolean</title>
+</head>
+<body>
+    <script>
+        // console.log(typeof true);
+        // console.log(typeof false);
+        // console.log(3>5);
+        // console.log(5==='4.00000');
+
+
+        // if(false){
+        //     console.log('hello');
+        // }else{
+        //     console.log('else')
+        // }
+        // const age=15;
+        // if(age>=18){
+        //     console.log("you can drive");
+        //     console.log("congrats!");
+        // }else if(age<=18){
+        //     console.log("you can not drive");
+        // }else{
+        //     console.log("all else condition are not working");
+        // }
+
+/*
+        if(5){
+            console.log('truthy');
+        }
+
+
+        const cartQuantity=5;
+        if(cartQuantity){
+            console.log('cart has product');
+        }
+
+        console.log(!0); // this give the boolean value
+
+        console.log('text'/5);// this give the Nan which meansnot a number
+        const variable=undefined; // that mean is that there is no value assign to the variable
+        console.log(variable);*/
+
+
+        //ternary operator
+        const result=0?'truthy':'falsy';///ternary operator
+        console.log(result);
+
+
+        false && console.log('hello'); // && GUARD operator
+        const message =5 && 'hello';
+        console.log(message);
+
+
+        const currency ='EUR' || 'USD'; //default operator
+        console.log(currency);
+
+    </script>
+</body>
+</html>

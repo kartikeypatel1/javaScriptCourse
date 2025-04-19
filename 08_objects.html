@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obects</title>
+</head>
+<body>
+    <script>
+        const product={
+            name:'socks',
+            price:1099
+        };
+        console.log(typeof product);
+        console.log(product.name);
+        console.log(product.price);
+        product.name='cotton socks'; // this is use for the changing the value of an object
+        console.log(product);
+
+        product.newProperty=true; //this is ude for the creating a new object property value pair
+        console.log(product);
+
+
+        delete product.newProperty; //this s use for the delete the value and property of the object
+        console.log(product);
+    </script>
+</body>
+</html>
