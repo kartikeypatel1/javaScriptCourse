@@ -20,11 +20,22 @@ console.log(c);//const type is block scoped thats why we cannot access it outsid
 
 
 // shadowing code
-var a=200;
+// var a=200;
+// {
+//     var a=100;
+//     let b=30;
+//     console.log(a);// it give the output of 100 because it is the shadowing of the variable a which is defined in the global scope and it is defined in the block scope with the same name so it will give the output of 100
+//     console.log(b);// it give the output of 30 because it is defined in the block scope and it is not shadowing any variable so it will give the output of 30 
+// }
+// console.log(a);// it give the output of 100 because it is the shadowing of the variable a which is defined in the global scope and it is defined in the block scope with the same name so it will give the output of 100
+
+
+let a=200;
 {
-    var a=100;
-    let b=30;
-    console.log(a);// it give the output of 100 because it is the shadowing of the variable a which is defined in the global scope and it is defined in the block scope with the same name so it will give the output of 100
-    console.log(b);// it give the output of 30 because it is defined in the block scope and it is not shadowing any variable so it will give the output of 30 
+    let a=100;
+    console.log(a);// it is also the shadowing of the variable a which is the outside the block scope but the output of this give the 100
 }
-console.log(a);// it give the output of 100 because it is the shadowing of the variable a which is defined in the global scope and it is defined in the block scope with the same name so it will give the output of 100
+console.log(a);// it give the output of 200 because it is the variable a which is defined in the global scope and it is not shadowing any variable so it will give the output of 200
+
+
+// in case of let and const the variable which is defined in the block scope shadow the global scope variable but the when we access the variable outside the block then output comes from the global scope variable, but in case of var the value is change .
